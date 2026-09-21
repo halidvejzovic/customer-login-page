@@ -11,19 +11,32 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     place-items: center;
+    color: white;
+    border-radius: 200px;
+    border: 2px solid red;
+    background-color: aqua;
 }
 
 img{
     grid-area: img;
     width: 100%;
+    border-radius: 200px;
+    border: 2px solid red;
 }
 
 section{
     grid-area: section;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     place-items: center;
     gap: 1rem;
+    color: white;
+    background-color: lightgreen;
+    border-radius: 200px;
+    border: 2px solid red;
+    
 }
 
