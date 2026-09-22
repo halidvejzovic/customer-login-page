@@ -1,9 +1,11 @@
 main{
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "img header"
     "img form";
+
 }
 
 header{
@@ -14,7 +16,7 @@ header{
     justify-content: center;
     place-items: center;
     color: white;
-    border-radius: 200px;
+    border-radius: 20px;
     border: 2px solid red;
     background-color: aqua;
 }
@@ -22,7 +24,7 @@ header{
 img{
     grid-area: img;
     width: 100%;
-    border-radius: 300px;
+    border-radius: 30px;
     border: 2px solid red;
 }
 
@@ -30,14 +32,15 @@ form{
     grid-area: form;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     place-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     color: white;
     background-color: lightgreen;
-    border-radius: 200px;
+    border-radius: 20px;
     border: 2px solid red;
     
 }
+ 
 
 
