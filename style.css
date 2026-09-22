@@ -42,5 +42,9 @@ form{
     
 }
  
-
+h1, p, label {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-weight: 700;
+}
 
