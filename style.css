@@ -3,7 +3,7 @@ main{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "img header"
-    "img section";
+    "img form";
 }
 
 header{
@@ -26,8 +26,8 @@ img{
     border: 2px solid red;
 }
 
-section{
-    grid-area: section;
+form{
+    grid-area: form;
     display: flex;
     justify-content: center;
     flex-direction: row;

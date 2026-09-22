@@ -9,20 +9,31 @@
 </head>
 <body>
     <main>
-        
+
         <header>
             <h1>Logga in</h1>
             <p>Fyll i dina uppgifter för att logga in på ditt konto</p>
         </header>
 
-        <section>
-            Namn<input type="text" placeholder="Ange ditt namn">
-            Lösenord<input type="password" placeholder="Ange ditt lösenord">
+        <form>
+            Namn<input type="text" placeholder="Ange ditt namn" required>
+            Lösenord<input type="password" placeholder="Ange ditt lösenord" required>
             <button>Logga in</button>
-        </section>
+        </form>
 
         <img src="bild.png" alt="Svampletarna">
 
     </main>
 </body>
 </html>
+
+<!-- DOM = Document Object Model
+DOM-manipulation handlar om att:
+
+Hämta element (getElementById, querySelector)
+Ändra innehåll (textContent, innerHTML)
+Ändra stil (style)
+Lägga till eller ta bort element (createElement, appendChild, remove)
+Hantera händelser (addEventListener)
+Ändra attribut (setAttribute, getAttribute) 
+-->
