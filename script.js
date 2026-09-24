@@ -1,13 +1,15 @@
 
-let formRef;
+let formRef; // variabel.
 
-function init() {
+//  funktion init lokaliserar min form element.
+function init() { 
     formRef = document.querySelector("form");
-    console.log(formRef);
+    console.log(formRef);  // skriver ut i consol
     
     
 }
 
+// Skriver ut min function "init".
 window.onload = init;
 
 
@@ -20,6 +22,13 @@ window.onload = init;
 
 
 
+
+/*
+addEventListener("submit") lyssnar på formuläret och väntar på att användaren ska trycka på Logga in. 
+När formuläret skickas körs koden i funktionen. event.preventDefault() stoppar sidan från att laddas om, 
+och sedan kan JavaScript själv kontrollera om användaren har skrivit in rätt namn och lösenord, till exempel 
+"Kalle" och "qwe123".
+*/
 
 
 /* DOM = Document Object Model
