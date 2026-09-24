@@ -50,4 +50,7 @@ h1, p, label {
     font-weight: 700;
     
 }
-
+header :last-child {
+    font-size: 50px;
+    margin: auto;
+}
