@@ -1,10 +1,24 @@
 
+const userName = "Kalle";
+const userPassword = "qwe123"
+
 let formRef; // variabel.
 
 //  funktion init lokaliserar min form element.
 function init() { 
     formRef = document.querySelector("form");
-    console.log(formRef);  // skriver ut i consol
+    console.log(formRef);
+    
+
+    const namnInput = document.getElementById("namn");
+
+    formRef.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        console.log(namnInput.value);
+        
+
+    })
     
     
 }
