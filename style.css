@@ -36,12 +36,11 @@ form{
     justify-content: center;
     flex-direction: column;
     place-items: center;
-    gap: 0.5rem;
     color: white;
     background-color: lightgreen;
     border-radius: 20px;
     border: 2px solid red;
-    padding-bottom: 1rem;
+    padding: 0.5rem;
     
 }
  
