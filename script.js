@@ -16,11 +16,15 @@ function init() {
     formRef.addEventListener("submit", function(event) { // övervakar submit knappen DVS om någon klickar på den så kör den functionen
         event.preventDefault(); // förhindrar att sidan laddas om utan prioriter händelsen efter att sumbit har tryckt.
 
-        if (namnInput.value === userName && lösenordInput.value === userPassword) {
-        console.log("Välkommen, du är nu inloggad!");
+        if (namnInput.value === userName && lösenordInput.value === userPassword) {  // jämför ddet duu skriver in med const variablerna
+        console.log("Välkommen Kalle, du är nu inloggad!");   // oom det är rätt skriver den ut Välkommen Kalle, Du är nu  inloggad!
         }        
         else {
             console.log("Felaktiga inloggningsuppgifter!");
+
+            namnInput.value = "";     
+            lösenordInput.value = "";
+            
         }
         
     
