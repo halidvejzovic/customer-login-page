@@ -36,6 +36,8 @@ function init() {
                 loggaUt.remove();                           // tar bor button elementtet.
             })
 
+            namnInput.value = "";     // texten försviner du kan skriva in på nytt utan att raderar den.sker automatiskt
+            lösenordInput.value = ""; // texten försviner du kan skriva in på nytt utan att raderar den.sker automatiskt
         }        
 
 
