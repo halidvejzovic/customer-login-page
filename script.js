@@ -1,6 +1,6 @@
 
-const userName = "Kalle";
-const userPassword = "qwe123"
+const userName = "Kalle";      // variabel const går inte att ändra
+const userPassword = "qwe123"  // variabel const går inte att ändra
 
 let formRef; // variabel.
 
@@ -21,24 +21,19 @@ function init() {
             formRef.style.display = "none"; // tar bort display form 
             
             const meddelande = document.createElement("p");  // skapar en variabel const som har en create element "P"
-
             meddelande.innerHTML = "Välkommen Kalle, du är nu inloggad!"; // skriver i p elementet texten ""
-
             document.body.appendChild(meddelande);    // lägger till constmedelandet
 
             console.log("Välkommen Kalle, du är nu inloggad!");   // om det är rätt skriver den ut Välkommen Kalle, Du är nu  inloggad!
 
-            const loggaUt = document.createElement("button");
+            const loggaUt = document.createElement("button"); // skappar en Button element
 
-            loggaUt.innerHTML = ("Logga ut");
-
-            document.body.appendChild(loggaUt);
-
-            loggaUt.addEventListener("click", function() {
-                formRef.style.display = "grid";
-                meddelande.remove();
-                loggaUt.remove();
-
+            loggaUt.innerHTML = ("Logga ut"); // lägger in text i button
+            document.body.appendChild(loggaUt); //lägger in elementn 
+            loggaUt.addEventListener("click", function() { // övervakar button knappen ochser vad som händer när någon clickar på den så
+                formRef.style.display = "grid";             // går den tillbaks till grid stylingen
+                meddelande.remove();                        // tar bort const medelandert , variabel med texten
+                loggaUt.remove();                           // tar bor button elementtet.
             })
 
         }        
@@ -49,10 +44,10 @@ function init() {
             const meddelande = document.createElement("p");  // skapar en variabel const som har en create element "P"
 
             meddelande.innerHTML = "Felaktiga inloggningsuppgifter!"; // skriver i p elementet texten ""
-            meddelande.remove();
-            document.body.appendChild(meddelande);
-            namnInput.value = "";     
-            lösenordInput.value = "";
+            meddelande.remove(); // tar bort const medelandert , variabel med texten
+            document.body.appendChild(meddelande); //lägger in const variabel.
+            namnInput.value = "";     // texten försviner du kan skriva in på nytt utan att raderar den.sker automatiskt
+            lösenordInput.value = ""; // texten försviner du kan skriva in på nytt utan att raderar den.sker automatiskt
             
         }
         
