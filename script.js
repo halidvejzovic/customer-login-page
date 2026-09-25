@@ -35,7 +35,7 @@ function init() {
             document.body.appendChild(loggaUt);
 
             loggaUt.addEventListener("click", function() {
-                formRef.style.display = "block";
+                formRef.style.display = "grid";
                 meddelande.remove();
                 loggaUt.remove();
 
