@@ -10,15 +10,21 @@ function init() {
     console.log(formRef);
     
 
-    const namnInput = document.getElementById("namn");
+    const namnInput = document.getElementById("namn"); // hittar element med id =namn
+    const lösenordInput = document.getElementById("lösenord"); // hittar element med id = lösenord
 
-    formRef.addEventListener("submit", function(event) {
-        event.preventDefault();
+    formRef.addEventListener("submit", function(event) { // övervakar submit knappen DVS om någon klickar på den så kör den functionen
+        event.preventDefault(); // förhindrar att sidan laddas om utan prioriter händelsen efter att sumbit har tryckt.
 
-        console.log(namnInput.value);
-        
+        console.log(namnInput.value);  
+        console.log(lösenordInput.value);
 
     })
+
+    if (namnInput.value === userName && lösenordInput.value === userPassword) {
+        console.log("H");
+        
+    }
     
     
 }
