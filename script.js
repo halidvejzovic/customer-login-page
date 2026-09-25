@@ -9,7 +9,6 @@ function init() {
     formRef = document.querySelector("form");
     console.log(formRef);
     
-
     const namnInput = document.getElementById("namn"); // hittar element med id =namn
     const lösenordInput = document.getElementById("lösenord"); // hittar element med id = lösenord
 
@@ -29,7 +28,7 @@ function init() {
             const loggaUt = document.createElement("button"); // skappar en Button element
 
             loggaUt.innerHTML = ("Logga ut"); // lägger in text i button
-            document.body.appendChild(loggaUt); //lägger in elementn 
+            document.body.appendChild(loggaUt); //lägger in elementet 
             loggaUt.addEventListener("click", function() { // övervakar button knappen ochser vad som händer när någon clickar på den så
                 formRef.style.display = "grid";             // går den tillbaks till grid stylingen
                 meddelande.remove();                        // tar bort const medelandert , variabel med texten
@@ -39,7 +38,6 @@ function init() {
             namnInput.value = "";     // texten försviner du kan skriva in på nytt utan att raderar den.sker automatiskt
             lösenordInput.value = ""; // texten försviner du kan skriva in på nytt utan att raderar den.sker automatiskt
         }        
-
 
         else {  // else function vad som händer när användaren skriver fel lösenord och namn. 
 
@@ -53,12 +51,8 @@ function init() {
             
         }
         
-    
-
     })
 
-    
-    
 }
 
 // Skriver ut min function "init".
