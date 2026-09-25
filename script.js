@@ -17,11 +17,40 @@ function init() {
         event.preventDefault(); // förhindrar att sidan laddas om utan prioriter händelsen efter att sumbit har tryckt.
 
         if (namnInput.value === userName && lösenordInput.value === userPassword) {  // jämför ddet duu skriver in med const variablerna
-        console.log("Välkommen Kalle, du är nu inloggad!");   // oom det är rätt skriver den ut Välkommen Kalle, Du är nu  inloggad!
-        }        
-        else {
-            console.log("Felaktiga inloggningsuppgifter!");
+        
+            formRef.style.display = "none"; // tar bort display form 
+            
+            const meddelande = document.createElement("p");  // skapar en variabel const som har en create element "P"
 
+            meddelande.innerHTML = "Välkommen Kalle, du är nu inloggad!"; // skriver i p elementet texten ""
+
+            document.body.appendChild(meddelande);    // lägger till constmedelandet
+
+            console.log("Välkommen Kalle, du är nu inloggad!");   // om det är rätt skriver den ut Välkommen Kalle, Du är nu  inloggad!
+
+            const loggaUt = document.createElement("button");
+
+            loggaUt.innerHTML = ("Logga ut");
+
+            document.body.appendChild(loggaUt);
+
+            loggaUt.addEventListener("click", function() {
+                formRef.style.display = "block";
+                meddelande.remove();
+                loggaUt.remove();
+
+            })
+
+        }        
+
+
+        else {  // else function vad som händer när användaren skriver fel lösenord och namn. 
+
+            const meddelande = document.createElement("p");  // skapar en variabel const som har en create element "P"
+
+            meddelande.innerHTML = "Felaktiga inloggningsuppgifter!"; // skriver i p elementet texten ""
+            meddelande.remove();
+            document.body.appendChild(meddelande);
             namnInput.value = "";     
             lösenordInput.value = "";
             
